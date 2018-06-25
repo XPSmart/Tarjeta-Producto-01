@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: #F1F1F1;
+}
+.titulo {
+	text-align: center;
+	color: teal;
+	margin: .5em 0;
+}
+
+.tarjeta-producto {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 240px;
+	height: 320px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+	overflow: hidden; 
+}
+.tarjeta-producto__header {
+	
+}
+.tarjeta-producto__img {
+	display: block;
+	width: 90%;
+	margin: 20px auto 0;
+}
+.tarjeta-producto__detalles {
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+	bottom: -130px;
+	transition: all .5s;
+}
+.tarjeta-producto:hover .tarjeta-producto__detalles {
+	bottom: 0;
+	box-shadow: 0 -5px 15px rgba(0,0,0,.25);
+}
+.tarjeta-producto__titulo {
+	font-size: 16px;
+}
+.tarjeta-producto__titulo span {
+	font-size: 12px;
+	color: #ccc;
+	font-weight: normal;
+}
+.tarjeta-producto__precio {
+	color: #ff4faf;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.tarjeta-producto__informacion label {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.tarjeta-producto__informacion ul {
+	display: flex;
+}
+.tarjeta-producto__informacion li {
+	list-style: none;
+	margin: 5px 5px 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #ccc;
+}
+.tarjeta-producto__informacion li:first-child {
+	margin-left: 0;
+}
+.tarjeta-producto__colores li {
+	height: 16px;
+	width: 16px;
+}
+
+.tarjeta-producto__colores li:nth-child(1) {
+	background-color: #ff0;
+}
+.tarjeta-producto__colores li:nth-child(2) {
+	background-color: #f00;
+}
+.tarjeta-producto__colores li:nth-child(3) {
+	background-color: #f0f;
+}
+.tarjeta-producto__colores li:nth-child(4) {
+	background-color: #0ff;
+}
+.tarjeta-producto__colores li:nth-child(5) {
+	background-color: #00f;
+}
+
+.tarjeta-producto__buy {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background-color: #ff4faf;
+	padding: 5px;
+	margin-top: 15px;
+	transition: all .5s;
+}
+.tarjeta-producto__buy:hover {
+	background-color: #ff209a;
+}
